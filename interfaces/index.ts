@@ -11,6 +11,15 @@ export interface Part {
   image_url: string | null;
   status: 'Available' | 'Low' | 'Critical';
 }
+export interface User {
+  user_id: number;
+  name: string;
+  company_id: string;
+  role: string;
+  status: number;
+  email: string;
+  password_hash: string;
+}
 export interface DashboardProps {
   parts: Part[];
 }
